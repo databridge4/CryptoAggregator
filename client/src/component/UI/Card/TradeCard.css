@@ -1,0 +1,16 @@
+.TradeCard {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding: 2em;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  justify-content: space-between;
+}
+
+p {
+  display: inline-block;
+  margin: auto;
+}

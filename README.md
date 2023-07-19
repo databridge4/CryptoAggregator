@@ -1,0 +1,1 @@
+# cryptoAggregator full stack project

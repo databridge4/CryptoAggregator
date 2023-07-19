@@ -1,0 +1,176 @@
+h1 {
+  color: #212121;
+}
+
+.TradeColumns {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+.TradeColumn {
+  flex: 1;
+  overflow-y: scroll;
+  max-height: 1000px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+}
+
+h2 {
+  color: #000000;
+}
+
+.TradeCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation styles */
+.item-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  padding: 20px 10px 40px 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.select-container-log {
+  display: flex;
+  min-height: 50px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 90%;
+  padding: 10px 10px 40px 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.select-item {
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+.select-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.select-block-archive,
+.select-block-slider {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  display: inline-block;
+}
+
+h3 {
+  margin: 5px;
+}
+
+/* Додаткові адаптивні стилі */
+@media (max-width: 1024px) {
+  .select-container,
+  .select-container-log {
+    width: 80%;
+    padding: 15px 8px 30px 8px;
+  }
+
+  .TradeColumn {
+    max-height: 900px;
+    padding: 15px;
+  }
+
+  .select-item {
+    width: 180px;
+    padding: 8px;
+  }
+
+  .select-block {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .select-container,
+  .select-container-log {
+    width: 70%;
+    padding: 10px 6px 25px 6px;
+  }
+
+  .TradeColumn {
+    max-height: 800px;
+    padding: 10px;
+  }
+
+  .select-item {
+    width: 160px;
+    padding: 6px;
+  }
+
+  .select-block {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .select-container,
+  .select-container-log {
+    width: 60%;
+    padding: 5px 4px 20px 4px;
+  }
+
+  .TradeColumn {
+    max-height: 700px;
+    padding: 5px;
+  }
+
+  .select-item {
+    width: 140px;
+    padding: 4px;
+  }
+
+  .select-block {
+    padding: 4px;
+  }
+}

@@ -1,0 +1,117 @@
+h1 {
+  color: #212121;
+}
+
+.TradeColumns {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+.TradeColumn {
+  flex: 1;
+  overflow-y: scroll;
+  max-height: 1000px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+}
+
+h2 {
+  color: #000000;
+}
+
+.TradeCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation styles */
+.item-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.select-item {
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+.select-block,
+.select-block-archive,
+.select-block-slider {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  display: inline-block;
+}
+
+h3 {
+  margin: 5px;
+}
+
+.inputs {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.space {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .select-block,
+  .select-block-archive,
+  .select-block-slider {
+    flex-direction: column;
+  }
+
+  .TradeColumn {
+    padding: 20px 10px;
+  }
+
+  .space {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
